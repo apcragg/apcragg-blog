@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>{{ title }} | apcragg.space</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/syntax.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+    <header>
+    <div class="header-inner">
+        <a href="/" class="header-link">
+            
+            <img src="/favicon.svg" alt="Logo" class="site-logo">
+            
+            <div class="header-text">
+                <h1 class="site-title">apcragg.space</h1>
+                <p class="subtitle">Notes on Wireless Communication Systems</p>
+            </div>
+            
+        </a>
+    </div>
+</header>
+    
+    <div class="layout">
+        <main>
+            {% block content %}
+                {{ content | safe }}
+            {% endblock %}
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>About</h3>
+                <p>I am an engineer working on wireless communication systems. Currently at Astranis. Views my own.</p>
+                <p><a href="/about.html">Read more &rarr;</a></p>
+            </div>
+
+            <div class="widget">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://github.com/apcragg">GitHub</a></li>
+                    <a href="/contact.html">Contact</a>
+                    </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; {{ build_date[:4] }} Andrew Cragg.</p>
+    </footer>
+</body>
+</html>

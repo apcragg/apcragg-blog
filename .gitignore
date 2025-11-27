@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Never commit dot env
+.env
+
+# Blog Content
+content/*
+
+# Favicon generator
+gen.py
+
+# IDE
+.vscode
